@@ -14,8 +14,7 @@ from .code_interpreter import PythonCodeInterpreter
 from .file_operation import WriteFile, ReadFile
 from .duckduckgo import DuckDuckGo
 from .pdf_reader import PDFReader
-from .geometry_calculator import GeometryAgent
-
+from .math_assistant import MathAssistant
 
 def load_tools(name: str) -> BaseTool:
     name2tool = {
@@ -46,7 +45,7 @@ def load_tools(name: str) -> BaseTool:
         "search_related_paper": SearchRelatedPaper,
         "search_cite_paper": SearchCitePaper,
         "pdf_reader": PDFReader,
-        "geometry_calculator": GeometryAgent,
+        "math_assistant": MathAssistant,
     }
     if name not in name2tool:
         raise NotImplementedError
