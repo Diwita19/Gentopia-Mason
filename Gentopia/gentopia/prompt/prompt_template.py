@@ -42,4 +42,3 @@ class PromptTemplate(BaseModel):
                     + str(e)
                 )
         return values
-
