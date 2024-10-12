@@ -6,7 +6,7 @@ from typing import AnyStr, Optional, Type, Any
 from gentopia.tools.basetool import BaseTool
 load_dotenv()
 
-openai.api_key = os.getenv('PUV2JH-V83G5G6WRG')
+openai.api_key = os.getenv('')
 
 
 class MathAssistantArgs(BaseModel):
